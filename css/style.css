@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-payday {
+    float: left;
+}
+
+.menu-items {
+    float: right;
+    display: flex;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu-items li {
+    list-style: none;
+    padding-right: 1rem;
+}
+
+nav {
+    width: 90vw;
+    margin: 3rem auto;
+}
+
+.section-home .img {
+    height: 24rem;
+}
+
+.section-home .img img {
+    height: inherit;
+}
