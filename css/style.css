@@ -1,11 +1,49 @@
+/* colors */
+/* rgb(84,166,79) */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* globals */
+.bold {
+    font-weight: bold;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.flex {
+    display: flex;
+}
+.wave-container {
+    background: #EEE;
+}
+.wave-container > svg {
+    display: block;
+}
+.wave-container {
+    position: relative;
+    background: #fff;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    top: -1px;
+}
+
 .logo-payday {
     float: left;
+}
+
+.logo-payday a,
+.menu-items li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 .menu-items {
@@ -22,15 +60,114 @@
     padding-right: 1rem;
 }
 
+.li-primary a.get-app {
+    color: green;
+}
+
+.get-app {
+    background-color: #fff;
+    padding: 10px 22px;
+    border-radius: 16px;
+}
+
+header {
+    background-color: rgb(84,166,79);
+}
+
 nav {
     width: 90vw;
-    margin: 3rem auto;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.section-home {
+    /* display: flex; */
 }
 
 .section-home .img {
     height: 24rem;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .section-home .img img {
     height: inherit;
+}
+
+.smartphone-portrait {
+    box-shadow: inset 0px 0px 0px -4px rgba(255, 255, 255, 0.1), 1px 1px 6px rgba(0, 0, 0, 0.05), 1px 1px 8px rgba(0, 0, 0, 0.07);
+}
+
+
+.section-home .content {
+    width: 50%;
+}
+
+.flex .img,
+.flex .content {
+    position: relative;
+    top: -18rem;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.content div {
+    margin-top: 6rem;
+}
+
+.content p {
+    color: rgb(84,166,79);
+    font-weight: bold;
+}
+
+.section-features h2,
+.section-how-it-works h2,
+.section-reviews h2,
+.section-reviews p,
+.section-faq h2,
+.section-faq p {
+    text-align: center;
+}
+
+.features,
+.how-it-works,
+.review-box,
+.review-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-overall,
+.reviews {
+    width: 50%;
+}
+
+.review-overall {
+    text-align: center;
+}
+
+.section-footer {
+    background-color: rgb(84,166,79);
+    color: #fff;
+}
+
+.widgets {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    border-top: 1px solid #fff;
+    padding: 3rem 0;
+    width: 90%;
+    margin: 0rem auto;
 }
