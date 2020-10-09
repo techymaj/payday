@@ -7,6 +7,19 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.poppins-light {
+    font-weight: 200;
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -78,14 +91,14 @@ button {
     color: #fff;
     font-size: 1.8rem;
     position: relative;
-    top: -8px;
+    top: -2px;
     left: 1rem;
 }
 
 .follow .fa,
 .contact .fa {
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.35rem;
 }
 
 .logo-payday {
@@ -99,9 +112,23 @@ button {
     cursor: pointer;
 }
 
+.logo-payday a img {
+    position: absolute;
+    top: 2rem;
+}
+
 .menu-items {
     float: right;
     display: flex;
+}
+
+.active::after {
+    content: '•';
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    margin: -8px auto 0 auto;
+    width: 0rem;
 }
 
 .clear {
@@ -119,8 +146,9 @@ button {
 
 .get-app {
     background-color: #fff;
-    padding: 8px 10px;
-    border-radius: 16px;
+    padding: 4px 8px;
+    border-radius: 14rem;
+    font-size: 14px;
 }
 
 .li-primary a.get-app:hover {
@@ -132,6 +160,10 @@ button {
 
 header {
     background-color: rgb(84,166,79);
+    /* On scroll trigger this  */
+    /* position: sticky;
+    top: 0;
+    z-index: 1; */
 }
 
 nav {
@@ -146,7 +178,7 @@ nav {
 
 .section-home .img {
     height: 30rem;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -156,24 +188,22 @@ nav {
     height: inherit;
 }
 
-.smartphone-portrait {
-    /* box-shadow: inset 0px 0px 0px -4px rgba(255, 255, 255, 0.1), 1px 1px 6px rgba(0, 0, 0, 0.05), 1px 1px 8px rgba(0, 0, 0, 0.07); */
-}
-
-
 .section-home .content {
-    width: 50%;
+    width: 100%;
 }
 
-.flex .img,
-.flex .content {
-    /* position: relative;
-    top: -18rem; */
+.j-center {
+    justify-content: center;
+}
+
+.move-h1 {
+    position: relative;
+    top: -2rem;
 }
 
 .move-section-up {
     position: absolute;
-    top: 2rem;
+    top: 0;
     margin: 0 auto;
     width: 100%;
 }
@@ -184,13 +214,13 @@ nav {
 }
 
 .content div {
-    margin-top: 12rem;
+    margin-top: 6rem;
 }
 
 .content p {
     color: rgb(84,166,79);
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 }
 
 .get-app-btn {
@@ -253,6 +283,10 @@ nav {
     margin-bottom: 2rem;
 }
 
+.section-faq h2 {
+    margin-top: -6rem;
+}
+
 .section-how-it-works h2::after {
     content: '';
     width: 6rem;
@@ -274,6 +308,14 @@ nav {
     justify-content: center;
 }
 
+.features .row {
+    width: 75vw;
+}
+
+.features .fa {
+    font-size: 5rem;
+}
+
 .feature-icon {
     text-align: center;
 }
@@ -283,6 +325,7 @@ nav {
     color: rgb(84,166,79);
     padding-top: 1rem;
     display: block;
+    font-weight: 700;
 }
 
 .section-how-it-works {
@@ -306,6 +349,17 @@ nav {
     font-size: 4rem;
 }
 
+.how-it-works .col-4:not(:first-child)::after {
+    content: '→';
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 4rem;
+    position: relative;
+    top: -12rem;
+    left: -3rem;
+}
+
 .hiw-icon {
     text-align: center;
     height: 150px;
@@ -315,6 +369,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: 5rem;
 }
 
 .hiw-content {
@@ -332,7 +388,7 @@ nav {
     padding: 7rem 0;
 }
 .how-it-works .row {
-    /* width: 75%; */
+    width: 75vw;
 }
 
 .review-overall,
@@ -376,7 +432,12 @@ nav {
 
 .faq-img {
     float: right;
-    margin-bottom: -4px;
+    height: 28rem;
+}
+
+.faq-img img {
+    object-fit: cover;
+    height: inherit;
 }
 
 .social-icons {
@@ -404,6 +465,10 @@ nav {
     padding: 3rem 0;
     display: flex;
     justify-content: space-between;
+}
+
+.widgets h3 {
+    padding-bottom: 1rem;
 }
 
 .footer {
@@ -442,6 +507,7 @@ nav {
     margin: 0 0 1em;
     border: 1px solid #ccc;
     outline: none;
+    background-color: aliceblue;
   }
   .section-faq input.invalid, .section-faq textarea.invalid {
     border-color: #d5144d;
@@ -501,3 +567,79 @@ nav {
     }
   }
 /* FORM CSS END */
+
+.scroll-container {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(84,166,79);
+    border-radius: 50%;
+    float: right;
+    position: relative;
+    top: 6rem;
+    left: 4rem;
+}
+
+/* SCROLL DOWN CSS START  */
+#section10 a {
+    padding-top: 60px;
+  }
+  #section10 a span {
+    position: absolute;
+    top: 70vh;
+    left: 90%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  #section10 a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb10 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb10 {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* SCROLL DOWN CSS END  */
