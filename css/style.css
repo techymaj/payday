@@ -73,7 +73,7 @@ body {
     color: #FFF;
     text-align: center;
     overflow: hidden;
-    top: -1px;
+    top: -2px;
 }
 button {
     border: 1px solid rgb(0, 149, 81);
@@ -815,7 +815,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 }
 
 @media only screen and (max-width: 768px) {
-    .menuToggle span {
+    label[for="menuToggle"] span {
         color: #fff;
     }
     .logo-payday a img {
@@ -943,11 +943,11 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-size: 1rem;
     }
     .section-features {
-        margin-top: 48rem;
+        margin-top: 40rem;
     }
     .section-features h2, .section-how-it-works h2, .section-reviews h2, .section-faq h2 {
         font-size: 2rem; 
-        padding: 0 3rem 0; 
+        padding: 5rem 3rem 0 3rem;
     }  
     .col-3,
     .col-4 {
@@ -1000,7 +1000,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         top: -.2rem;
     }
     .how-it-works .col-4:not(:first-child)::after {
-        left: 8rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-7%, -300%);
     }
     .hiw-icon {
         left: 4rem;
@@ -1018,7 +1020,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         left: 3rem;
     }
     .how-it-works .col-4:not(:first-child)::after {
-        left: 7rem;
+        left: 50%;
     }
 }
 
@@ -1035,11 +1037,14 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .move-h1 {
         font-size: 2rem;
     }
+    .section-features {
+        margin-top: 48rem;
+    }
     .hiw-icon {
         left: 2rem;
     }
     .how-it-works .col-4:not(:first-child)::after {
-        left: 5.6rem;
+        left: 50%;
     }
     .section-faq .wave-container {
         top: -6rem;
