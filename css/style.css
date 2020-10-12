@@ -810,6 +810,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         justify-content: center;
         display: flex;
     }
+    .li-primary .fa:last-child {
+        left: 0;
+    }
     nav{
         position:relative;
         top:20px;
@@ -886,7 +889,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         top: .5rem;
     }
     .logo-payday a img {
-        width: 10rem;
+        width: 8rem;
     }
     .move-section-up {
         top: -2rem;
