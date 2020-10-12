@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -129,6 +130,7 @@ button {
     color: #fff;
     margin: -8px auto 0 auto;
     width: 0rem;
+    display: none; /* find a way to toggle this and fix placement on collapse */
 }
 
 .clear {
@@ -203,7 +205,7 @@ nav {
 
 .move-section-up {
     position: absolute;
-    top: 0;
+    top: 10rem;
     margin: 0 auto;
     width: 100%;
 }
@@ -370,7 +372,7 @@ nav {
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 5rem;
+    left: 14.4rem;
 }
 
 .hiw-content {
@@ -569,8 +571,8 @@ nav {
 /* FORM CSS END */
 
 .scroll-container {
-    height: 300px;
-    width: 300px;
+    height: 18.75rem;
+    width: 18.75rem;
     background-color: rgb(84,166,79);
     border-radius: 50%;
     float: right;
@@ -586,7 +588,7 @@ nav {
   #section10 a span {
     position: absolute;
     top: 70vh;
-    left: 90%;
+    left: 95%;
     width: 30px;
     height: 50px;
     margin-left: -15px;
@@ -643,3 +645,357 @@ nav {
   }
 
   /* SCROLL DOWN CSS END  */
+
+
+  /* CUSTOM MEDIA QUERIES */
+  @media screen and (max-width: 1920px) {
+    .move-section-up {
+        top: 5rem;
+    }
+    #section10 a span {
+        top: 55vh
+    }
+    .hiw-icon {
+        left: 9.4rem;
+    }
+    body {
+        overflow-x: hidden;
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .move-section-up {
+        top: 2rem;
+    }
+    #section10 a span {
+        top: 42vh;
+    }
+    .hiw-icon {
+        left: 5.4rem;
+    }    
+  }
+
+  @media screen and (max-width: 1366px) {
+    .move-section-up {
+        top: 1rem;
+    }
+    #section10 a span {
+        top: 65vh;
+        left: 90%;
+    }
+    .hiw-icon {
+        left: 5rem;
+    }
+  }
+
+  @media screen and (max-width: 1024px) { 
+    .move-section-up {
+        top: -1rem;
+    }
+    .scroll-container {
+        height: 14.75rem;
+        width: 14.75rem;
+        top: 11rem;
+    }
+    .hiw-icon {
+        left: 2.5rem;
+    }
+    .section-faq #contact-form {
+        margin-bottom: 6.1rem;
+    }
+    .faq-img {
+        height: 25rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .faq-form {
+        left: 3rem;
+    }
+  }
+
+/* iPad general */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    .content div {
+        margin-top: 5rem;
+    }
+    .content h1 {
+        top: 2.5rem;
+        position: relative;
+        font-size: 3.5rem;
+    }
+    .content p {
+        font-size: 1.1rem;
+    }
+    .move-h1 {
+        top: 0rem;
+        color: rgb(84,166,79);
+    }
+    #section10 a span {
+        top: 40vh;
+    }
+    .how-it-works .row {
+        width: 100vw;
+    }
+    .faq-img {
+        top: 1.1rem;
+        height: 19rem;
+    }
+    .section-faq textarea {
+        height: 5em;
+    }
+}
+
+  /* iPad Pro Portrait */
+  @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+      .move-section-up {
+          top: 1.45rem;
+      }
+      #section10 a span {
+          top: 35vh;
+      }
+      .hiw-icon {
+        left: 5rem;
+    }
+  }
+
+  /* iPad Pro Landscape */
+@media only screen 
+and (min-width: 1024px) 
+and (max-height: 1366px) 
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 1.5) {
+  #section10 a span {
+      top: 50vh;
+  }
+}
+
+  /* iPad Pro Landscape */
+  @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 768px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .move-section-up {
+        top: 1.45rem;
+    }
+    #section10 a span {
+        top: 65vh;
+    }
+    .hiw-icon {
+        left: 5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo-payday a img {
+        top: 0;
+    }
+    .menu-items {
+        display: block;
+    }
+    .menu-items li {
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    nav{
+        position:relative;
+        top:20px;
+        left: 0;
+        border:2px solid rgb(84,166,79);
+        border-radius:21px;
+        min-width:40px;
+        min-height:0;
+        overflow:hidden;
+      }
+      nav input{
+        display:none;
+      }
+      nav input:checked ~ label span:last-child{
+        display:none;
+      }
+      nav input:not(:checked) ~ label span:first-child{
+        display:none;
+      }
+      nav label{
+        display:block;
+        position:absolute;
+        right:0px;
+        top:0px;
+        user-select:none;
+        width:41px;
+        height:41px;
+        text-align:center;
+        line-height:40px;
+        background: rgb(84,166,79);
+        color:white;
+        border-bottom-left-radius:20px;
+        cursor:pointer;
+      }
+      nav ul{
+        overflow:hidden;
+        width:0;
+        height:0;
+        padding:0;
+        margin:0;
+        transition:width 0.5s, height 0.5s;
+        list-style:none;
+        position: relative;
+        top: 4rem;
+      }
+      nav input:checked ~ ul{
+        width: 100%;
+        height: 35rem;
+      }
+      nav ul li a{
+        color:#333;
+        text-transform:uppercase;
+        text-decoration:none;
+        font-family:'Roboto', sans-serif;
+        display:block;
+        width:200px;
+        height:30px;
+        line-height:30px;
+        letter-spacing:2px;
+        text-align:center;
+        transition:color 0.5s, background 0.5s;
+      }
+      nav ul li a:hover{
+        background:#333;
+        color:white;
+      }
+      .get-app {
+          padding: 2px 8px;
+      }
+}
+
+@media only screen and (max-width: 480px) {
+    nav label {
+        top: .5rem;
+    }
+    .move-section-up {
+        top: -2rem;
+        left: 0;
+    }
+    .flex {
+        display: block;
+    }  
+    .content h1 {
+        color: rgb(84,166,79);
+        font-size: 3rem;
+    }
+    #section10 {
+        display: none;
+    }
+    .section-home .content {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .content div {
+        margin-top: 0rem;
+    }
+    .content p {
+        font-size: 1rem;
+    }
+    .section-features {
+        margin-top: 45rem;
+    }
+    .section-features h2, .section-how-it-works h2, .section-reviews h2, .section-faq h2 {
+        font-size: 2rem;
+        padding-top: 2rem;    
+    }  
+    .col-3,
+    .col-4 {
+        width: 100%;
+    }
+    .features, .how-it-works, .review-box, .review-button-container {
+        margin-top: -4rem;
+    }
+    .hiw-icon {
+        left: 4.5rem;
+    }
+    .how-it-works .col-4:not(:first-child)::after {
+        content: '↓';
+        display: block;
+        color: #fff;
+        font-weight: bold;
+        font-size: 4rem;
+        position: relative;
+        top: -19.5rem;
+        left: 8.5rem;
+    }
+    .col-4:nth-child(2) {
+        position: relative;
+        top: 3rem;
+    }
+    .section-how-it-works {
+        margin-bottom: 2rem;
+    }
+    .faq-form, 
+    .faq-img {
+        float: none;
+    }
+    .faq-form {
+        left: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .faq-img {
+        position: static;
+    }
+    .footer .left,
+    .footer .right {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .how-it-works .col-4:not(:first-child)::after {
+        left: 8rem;
+    }
+    .hiw-icon {
+        left: 4rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .section-features h2, .section-how-it-works h2, .section-reviews h2, .section-faq h2 {
+        padding-top: 4rem;
+    }
+    .hiw-icon {
+        left: 3rem;
+    }
+    .how-it-works .col-4:not(:first-child)::after {
+        left: 7rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .how-it-works .col-4:not(:first-child)::after {
+        left: 6.9rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .widgets .row {
+        width: 100%;
+    }
+    .widgets .row .col-3 {
+        width: 33%;
+    }
+    .social-icons {
+        justify-content: end;
+    }
+    .social-icons span {
+        padding-right: 1rem;
+    }
+}
