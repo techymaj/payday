@@ -815,6 +815,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 }
 
 @media only screen and (max-width: 768px) {
+    .menuToggle span {
+        color: #fff;
+    }
     .logo-payday a img {
         top: -.45rem;
     }
