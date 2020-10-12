@@ -225,6 +225,12 @@ nav {
     margin-top: 6rem;
 }
 
+.content div a img {
+    width: 10rem;
+    position: relative;
+    left: -.7rem;
+}
+
 .content p {
     color: rgb(85, 167, 80);
     font-weight: 200;
@@ -390,6 +396,7 @@ nav {
 
 .hiw-content span {
     text-transform: capitalize;
+    font-weight: 300;
 }
 
 .how-it-works {
@@ -461,6 +468,7 @@ nav {
 .section-footer {
     background-color: rgb(85, 167, 80);
     color: #fff;
+    font-weight: 300;
 }
 
 .section-footer .right span:not(:first-child) {
