@@ -1,5 +1,5 @@
 /* colors */
-/* rgb(85, 167, 80) */
+/* rgb(0, 149, 81) */
 
 * {
     box-sizing: border-box;
@@ -47,7 +47,7 @@ body {
 
 /* globals */
 .color-primary {
-    color: rgb(85, 167, 80);
+    color: rgb(0, 149, 81);
 }
 .bold {
     font-weight: bold;
@@ -76,16 +76,16 @@ body {
     top: -1px;
 }
 button {
-    border: 1px solid rgb(85, 167, 80);
+    border: 1px solid rgb(0, 149, 81);
     background-color: #fff;
     border-radius: 1rem;
     padding: 5px;
-    color: rgb(85, 167, 80);
+    color: rgb(0, 149, 81);
 }
 .fa {
     display: block;
     font-size: 4rem;
-    color: rgb(85, 167, 80);
+    color: rgb(0, 149, 81);
 }
 
 .li-primary .fa {
@@ -155,14 +155,14 @@ button {
 }
 
 .li-primary a.get-app:hover {
-    background-color: rgb(85, 167, 80);
+    background-color: rgb(0, 149, 81);
     color: #fff;
     border: 1px solid #fff;
     cursor: pointer;
 }
 
 header {
-    background-color: rgb(85, 167, 80);
+    background-color: rgb(0, 149, 81);
     /* On scroll trigger this  */
     /* position: sticky;
     top: 0;
@@ -232,14 +232,14 @@ nav {
 }
 
 .content p {
-    color: rgb(85, 167, 80);
+    color: rgb(0, 149, 81);
     font-weight: 200;
     font-size: 1.4rem;
 }
 
 .get-app-btn {
     margin-top: 1rem;
-    background-color: rgb(85, 167, 80);
+    background-color: rgb(0, 149, 81);
     color: #fff;
     padding: 8px;
     cursor: pointer;
@@ -248,10 +248,10 @@ nav {
 .get-app-btn:hover {
     margin-top: 1rem;
     background-color: #fff;
-    color: rgb(85, 167, 80);
+    color: rgb(0, 149, 81);
     padding: 8px;
     cursor: pointer;
-    border-color: rgb(85, 167, 80);
+    border-color: rgb(0, 149, 81);
 }
 
 .section-home {
@@ -284,7 +284,7 @@ nav {
     content: '';
     width: 6rem;
     height: 6px;
-    background-color: rgb(85, 167, 80);
+    background-color: rgb(0, 149, 81);
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -336,14 +336,14 @@ nav {
 
 .feature-icon span {
     text-transform: uppercase;
-    color:rgb(85, 167, 80);
+    color:rgb(0, 149, 81);
     padding-top: 1rem;
     display: block;
     font-weight: 700;
 }
 
 .section-how-it-works {
-    background-color: rgb(85, 167, 80);
+    background-color: rgb(0, 149, 81);
 }
 
 .section-how-it-works h2 {
@@ -355,7 +355,7 @@ nav {
 }
 
 .section-how-it-works .wave-container > svg {
-    background-color: rgb(85, 167, 80);
+    background-color: rgb(0, 149, 81);
 }
 
 .section-how-it-works .fa {
@@ -427,9 +427,9 @@ nav {
 }
 
 .section-faq .faq-form input[type="submit"] {
-    border: 1px solid rgb(85, 167, 80);
+    border: 1px solid rgb(0, 149, 81);
     background-color: #fff;
-    color: rgb(85, 167, 80);
+    color: rgb(0, 149, 81);
     padding: 6px 20px;
     width: 8rem;
     border-radius: 4rem;
@@ -439,8 +439,8 @@ nav {
 }
 
 .section-faq .faq-form input[type="submit"]:hover {
-    border: 1px solid rgb(85, 167, 80);
-    background-color: rgb(85, 167, 80);
+    border: 1px solid rgb(0, 149, 81);
+    background-color: rgb(0, 149, 81);
     color: #fff;
     cursor: pointer;
 }
@@ -466,7 +466,7 @@ nav {
 }
 
 .section-footer {
-    background-color: rgb(85, 167, 80);
+    background-color: rgb(0, 149, 81);
     color: #fff;
     font-weight: 300;
 }
@@ -587,7 +587,7 @@ nav {
 .scroll-container {
     height: 18.75rem;
     width: 18.75rem;
-    background-color: rgb(85, 167, 80);
+    background-color: rgb(0, 149, 81);
     border-radius: 50%;
     float: right;
     position: relative;
@@ -748,7 +748,7 @@ and (max-device-width : 1024px)  {
     }
     .move-h1 {
         top: 0rem;
-        color: rgb(85, 167, 80);
+        color: rgb(0, 149, 81);
     }
     #section10 a span {
         top: 40vh;
@@ -830,7 +830,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         position:relative;
         top:20px;
         left: 0;
-        border:2px solid rgb(85, 167, 80);
+        border:2px solid rgb(0, 149, 81);
         border-radius:21px;
         min-width:40px;
         min-height:0;
@@ -855,7 +855,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         height:41px;
         text-align:center;
         line-height:40px;
-        background: rgb(85, 167, 80);
+        background: rgb(0, 149, 81);
         color:white;
         border-bottom-left-radius:20px;
         cursor:pointer;
@@ -916,7 +916,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         display: block;
     }  
     .content h1 {
-        color: rgb(85, 167, 80);
+        color: rgb(0, 149, 81);
         font-size: 2.8rem;
     }
     .move-h1 {
