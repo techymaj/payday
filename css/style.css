@@ -211,6 +211,11 @@ nav {
     width: 100%;
 }
 
+.img.smartphone-portrait img {
+    -webkit-filter: drop-shadow(15px 15px 10px #222);
+    filter: drop-shadow(15px 15px 10px #222);
+}
+
 .content h1 {
     color: #fff;
     font-size: 4rem;
