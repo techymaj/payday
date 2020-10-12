@@ -115,7 +115,8 @@ button {
 
 .logo-payday a img {
     position: absolute;
-    top: 2rem;
+    top: 1.28rem;
+    width: 12rem;
 }
 
 .menu-items {
@@ -995,6 +996,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 }
 
 @media only screen and (min-width: 1024px) {
+    #menuToggle,
+    label[for="menuToggle"] {
+        display: none;
+    }
     .widgets .row {
         width: 100%;
     }
