@@ -323,7 +323,7 @@ nav {
 }
 
 .features .row {
-    width: 75vw;
+    width: 85vw;
 }
 
 .features .fa {
@@ -521,9 +521,12 @@ nav {
   }
   .section-faq input[type="text"], input[type="email"], .section-faq textarea {
     margin: 0 0 1em;
-    border: 1px solid #ccc;
+    border: none;
     outline: none;
-    background-color: aliceblue;
+    background-color: rgb(245,248,242);
+    padding-top: 1rem;
+    padding-left: 1rem;
+
   }
   .section-faq input.invalid, .section-faq textarea.invalid {
     border-color: #d5144d;
@@ -715,7 +718,7 @@ nav {
         left: 2.5rem;
     }
     .section-faq #contact-form {
-        margin-bottom: 6.1rem;
+        margin-bottom: 5.4rem;
     }
     .faq-img {
         height: 25rem;
@@ -959,7 +962,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-weight: bold;
         font-size: 4rem;
         position: relative;
-        top: -19.5rem;
+        top: -18rem;
         left: 8.5rem;
     }
     .col-4:nth-child(2) {
@@ -1022,6 +1025,30 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .content h1 {
         font-size: 2.5rem;
     }
+}
+
+@media only screen and (max-width: 320px) {
+    .move-h1 {
+        font-size: 2rem;
+    }
+    .hiw-icon {
+        left: 2rem;
+    }
+    .how-it-works .col-4:not(:first-child)::after {
+        left: 5.6rem;
+    }
+    .section-faq .wave-container {
+        top: -6rem;
+    }
+    .section-faq p:first-of-type {
+        padding: 0 2rem;
+    }
+    .section-footer .right span {
+        display: block;
+    }
+    .section-footer .right span:not(:first-child) {
+        padding-left: 0;
+    }    
 }
 
 @media only screen and (min-width: 1024px) {
