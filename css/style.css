@@ -691,7 +691,7 @@ nav {
 
   @media screen and (max-width: 1024px) { 
     .move-section-up {
-        top: -1rem;
+        top: 1.4rem;
     }
     .scroll-container {
         height: 14.75rem;
@@ -719,6 +719,9 @@ nav {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  {
+    .move-section-up {
+        top: -1rem;
+    }
     .content div {
         margin-top: 5rem;
     }
@@ -796,7 +799,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 @media only screen and (max-width: 768px) {
     .logo-payday a img {
-        top: 0;
+        top: -.45rem;
     }
     .menu-items {
         display: block;
@@ -882,6 +885,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     nav label {
         top: .5rem;
     }
+    .logo-payday a img {
+        width: 10rem;
+    }
     .move-section-up {
         top: -2rem;
         left: 0;
@@ -963,6 +969,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 }
 
 @media only screen and (max-width: 414px) {
+    .logo-payday a img {
+        top: -.2rem;
+    }
     .how-it-works .col-4:not(:first-child)::after {
         left: 8rem;
     }
