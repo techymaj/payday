@@ -115,7 +115,7 @@ button {
 
 .logo-payday a img {
     position: absolute;
-    top: 1.28rem;
+    top: -1.28rem;
     width: 12rem;
 }
 
@@ -819,7 +819,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         color: #fff;
     }
     .logo-payday a img {
-        top: -.45rem;
+        top: -3.45rem;
     }
     .menu-items {
         display: block;
@@ -914,6 +914,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .logo-payday a img {
         width: 8rem;
+        top: -3rem;
     }
     .move-section-up {
         top: -5rem;
@@ -997,7 +998,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 @media only screen and (max-width: 414px) {
     .logo-payday a img {
-        top: -.2rem;
+        top: -2.9rem;
     }
     .how-it-works .col-4:not(:first-child)::after {
         left: 50%;
