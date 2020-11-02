@@ -1059,6 +1059,12 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         width: 75vw;
         margin-top: -4rem;
       }
+      .section-features {
+          padding-bottom: 6rem;
+      }
+      .div-features-pop-up .container {
+          top: 100%;
+      }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1150,6 +1156,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         float: none;
         text-align: center;
     }
+    .div-features-pop-up .container {
+        top: 95%;
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -1187,6 +1196,12 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .content h1 {
         font-size: 2.5rem;
+    }
+    .modal-window > div {
+        width: 300px;
+    }
+    .modal-window h1 {
+        margin-top: 1.8rem;
     }
 }
 
