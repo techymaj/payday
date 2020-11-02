@@ -38,9 +38,9 @@
             <ul class="menu-items">
                 <li class="li-primary active"><a href="/">Home</a></li>
                 <li class="li-primary"><a href="/about.php">About</a></li>
-                <li class="li-primary"><a href="#features">Features</a></li>
+                <li class="li-primary"><a href="/#features">Features</a></li>
                 <li class="li-primary"><a href="/faq.php">FAQ</a></li>
-                <li class="li-primary"><a href="#contact">Contact</a></li>
+                <li class="li-primary"><a href="/#contact">Contact</a></li>
                 <li class="li-primary"><a class="get-app" href="https://play.google.com/store/apps/details?id=com.kwikash.app">Get <span class="bold">payday</span> app</a></li>
                 <li class="li-primary"><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
             </ul>
