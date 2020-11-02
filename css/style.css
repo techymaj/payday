@@ -268,14 +268,16 @@ nav {
 .section-reviews h2,
 .section-reviews p,
 .section-faq h2,
-.section-faq p {
+.section-faq p,
+section.about h2 {
     text-align: center;
 }
 
 .section-features h2,
 .section-how-it-works h2,
 .section-reviews h2,
-.section-faq h2 {
+.section-faq h2,
+section.about h2 {
     font-size: 2.5rem;
     /* border-bottom: 5px solid; */
 }
@@ -285,10 +287,11 @@ nav {
 }
 
 .section-features h2::after,
-.section-faq h2::after {
+.section-faq h2::after,
+section.about h2::after {
     content: '';
     width: 6rem;
-    height: 6px;
+    height: 3px;
     background-color: rgb(0, 149, 81);
     display: block;
     margin-right: auto;
@@ -787,6 +790,23 @@ nav {
   
   /* FEATURES MODAL POP UP END */
 
+  .about .wave-container,
+  section.about {
+    background-color: #f3f3f5;
+  }
+
+  .about-content {
+    text-align: center;
+    width: 50vw;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    padding-bottom: 8rem;
+  }
+
+  .about-content p {
+      padding: 1rem 0;
+  }
+
 
   /* CUSTOM MEDIA QUERIES */
   @media screen and (max-width: 1920px) {
@@ -889,6 +909,12 @@ and (max-device-width : 1024px)  {
     }
     .section-faq textarea {
         height: 5em;
+    }
+    h2.about-header {
+        padding-top: 3rem;
+    }
+    .about-content {
+        width: 75vw;
     }
 }
 
@@ -1025,6 +1051,13 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
       }
       .get-app {
           padding: 2px 8px;
+      }
+      h2.about-header {
+        padding-top: 3rem;
+      }
+      .about-content {
+        width: 75vw;
+        margin-top: -4rem;
       }
 }
 

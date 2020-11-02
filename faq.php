@@ -37,7 +37,7 @@
             </span>
             <ul class="menu-items">
                 <li class="li-primary active"><a href="/">Home</a></li>
-                <li class="li-primary"><a href="#">About</a></li>
+                <li class="li-primary"><a href="/about.php">About</a></li>
                 <li class="li-primary"><a href="#features">Features</a></li>
                 <li class="li-primary"><a href="/faq.php">FAQ</a></li>
                 <li class="li-primary"><a href="#contact">Contact</a></li>
