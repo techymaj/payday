@@ -307,6 +307,7 @@ section.about h2::after {
 
 .section-faq h2 {
     margin-top: -6rem;
+    color: black;
 }
 
 .section-how-it-works h2::after {

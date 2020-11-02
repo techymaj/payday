@@ -84,7 +84,7 @@ Primary style
   
   .faq-header {
     text-align: center;
-    padding: 5rem 0 0 0;
+    padding: 5rem 3rem 0;
   }
   .faq-header::after {
     content: '';
@@ -468,6 +468,12 @@ Primary style
     }
     .no-js .cd-faq-content {
       display: block;
+    }
+  }
+
+  @media only screen and (max-width: 320px) { 
+    .faq-header {
+      font-size: 1.6rem;
     }
   }
   
