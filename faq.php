@@ -55,7 +55,7 @@
         <li><a href="#setup">Setup</a></li>
         <li><a href="#account">Account</a></li>
         <li><a href="#payments">Payments</a></li>
-        <li><a href="#shoutout">Shoutout</a></li>
+        <li><a href="#shoutout">Shout-out</a></li>
       </ul>
       <!-- cd-faq-categories-->
       <div class="cd-faq-items">
