@@ -70,6 +70,37 @@
                     </div>
                 </div>
             </div>
+            <div class="div-features-pop-up">
+                <div class="container">
+                    <div class="interior">
+                        <a class="btn" href="#open-modal">Read more</a>
+                    </div>
+                </div>
+                <div id="open-modal" class="modal-window">
+                    <div>
+                        <a href="#features" title="Close" class="modal-close">Close</a>
+                        <h1>Who are Eligible?</h1>
+                        <ul>
+                            <li>
+                                <div>
+                                    All salary earners who have key
+                                    documents like National IDs, an authentic
+                                    confirmation letter of gainful
+                                    employment.
+                                </div>
+                        
+                            </li>
+                            <li>
+                                <div>
+                                    A CRB card with good credit history is an added advantage.
+                                </div>
+                            </li>
+                        </ul>
+                        <div><small>Check out our frequently asked questions</small></div>
+                        <a href="/faq.php">👉 Frequetly asked questions</div>
+                        </div>
+                    </div>
+            </div>
         </section>
     
         <section class="section-how-it-works">
@@ -236,6 +267,7 @@
                 </div>
             </div>
         </section>
+
     </main>
     
 <?php include( 'footer.php' ) ?>
