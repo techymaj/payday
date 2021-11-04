@@ -836,7 +836,7 @@ section.sppb-section {
 	content: " ";
   display: table;
 }
-*:before.
+*:before,
 *:after {
 	box-sizing: border-box;
 }
@@ -1238,11 +1238,11 @@ body .custom-clients-styles.page-margin-top-section {
 }
 
 .one-rem-bottom {
-	margin-bottom: : 1rem;
+	margin-bottom: 1rem;
 }
 
 .two-rem-bottom {
-	margin-bottom: : 2rem;
+	margin-bottom: 2rem;
 }
 
 .three-rem-bottom {
@@ -1446,7 +1446,7 @@ a.cs-action-button:last-of-type {
   padding: 8rem;
 }
 
-rs-fullwidth-wrap {
+.rs-fullwidth-wrap {
   top: -1rem;
 }
 

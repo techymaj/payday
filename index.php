@@ -76,7 +76,7 @@
                         <a class="btn" href="#open-modal">Read more</a>
                     </div>
                 </div>
-                <div id="open-modal" class="modal-window">
+                <!-- <div id="open-modal" class="modal-window">
                     <div>
                         <a href="#features" title="Close" class="modal-close">Close</a>
                         <h1>Who are Eligible?</h1>
@@ -100,9 +100,9 @@
                         <a href="/faq.php">👉 Frequetly asked questions</div>
                         </div>
                     </div>
-            </div>
+            </div> -->
         </section>
-    
+
         <section class="section-how-it-works">
             <div class="wave-container">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -195,7 +195,7 @@
                 </svg>
               </div>
             <h2>Any questions?</h2>
-            <p>Check out our <span class="color-primary">FAQ page</span> or contact us</p>
+            <p>Check out our <span class="color-primary"><a href="/faq.php">FAQ page</a></span> or contact us</p>
             <div data-aos="fade-right" data-aos-duration="1500">
                 <div class="faq-form">
                     <section id="contact-form">
@@ -267,6 +267,8 @@
                 </div>
             </div>
         </section>
+    
+        <div></div>
 
     </main>
     
